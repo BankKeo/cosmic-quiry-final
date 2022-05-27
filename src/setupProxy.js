@@ -1,12 +1,18 @@
-const { createProxyMiddleware } = require("http-proxy-middleware");
+import * as express from "express";
+import {
+  createProxyMiddleware,
+  Filter,
+  Options,
+  RequestHandler,
+} from "http-proxy-middleware";
 
-module.exports = function (app) {
-  app.use(
-    createProxyMiddleware("/api/**", { target: "https://blogcq.herokuapp.com" })
-  );
-  app.use(
-    createProxyMiddleware("/otherApi/**", {
-      target: "https://blogcq.herokuapp.com",
-    })
-  );
-};
+const app = express();
+
+app.use(
+  "/api",
+  createProxyMiddleware({
+    target: "https://blogcq.herokuapp.com",
+    changeOrigin: true,
+  })
+);
+app.listen(3000);
