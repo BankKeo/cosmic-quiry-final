@@ -1,0 +1,28 @@
+.home_page {
+  margin-top: 90px;
+}
+
+.home_page h3 a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: darkblue;
+  letter-spacing: 3;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.home_page h3:hover a {
+  color: crimson;
+}
+
+.home_page h3 a small {
+  font-size: 15px;
+}
+
+.home_blogs {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill);
+  grid-gap: 10px;
+}
+

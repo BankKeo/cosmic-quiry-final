@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  transform: translateY(-3px);
+  border-radius: 50%;
+}
+
+/* ---------- Navbar ------------ */
+@import url("./navbar.css");
+
+/* ---------- Auth Page------------ */
+@import url("./auth.css");
+
+/* ---------- Loading Page------------ */
+@import url("./loading.css");
+
+/* ---------- Alert Page------------ */
+@import url("./alert.css");
+
+/* ---------- Profile Page------------ */
+@import url("./profile.css");
+
+/* ---------- Category Page------------ */
+@import url("./category.css");
+
+/* ---------- Create_page Page------------ */
+@import url("./create_blog.css");
+
+/* ---------- Create_page Page------------ */
+@import url("./home.css");
+
+/* ---------- blogs_category Page------------ */
+@import url("./blog_category.css");
+
+/* ---------- comment------------ */
+@import url("./comment.css");
+
+
