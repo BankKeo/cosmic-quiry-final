@@ -1,10 +1,5 @@
 import * as express from "express";
-import {
-  createProxyMiddleware,
-  Filter,
-  Options,
-  RequestHandler,
-} from "http-proxy-middleware";
+import { createProxyMiddleware } from "http-proxy-middleware";
 
 const app = express();
 
